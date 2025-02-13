@@ -9,7 +9,6 @@ def print_words(words: list[str]):
     word_dict = fetch_word(word)
     definitions = word_dict['results'][0]['definition']
     synonyms = word_dict['results'][0]['synonyms']
-    # print(word_dict['results'])
     print(f'{definitions} {synonyms}')
 
 def fetch_word(word: str):
